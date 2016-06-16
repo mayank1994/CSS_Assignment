@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Learning CSS Assignmrnt 2.3</title>
+
+<style type="text/css">
+	#main{
+			background-image:url("images.jpg"); 
+			
+			height:900px;
+			width: 800px;
+			position: relative;
+			left:300px;
+			
+		}
+
+		h2{
+
+			color: white;
+		}
+
+
+ .trans{
+	
+	padding:5px;
+    margin: 5px;
+    background-color: lightblue; 
+    border: 4px solid ;
+	border-color : white;
+	border-radius:4px;
+    /*opacity: 0.4;*/
+   
+    -webkit-column-count: 2;
+    position: relative;
+}
+
+
+
+.buy_button{
+	background-color: blue; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    margin-left: 350px;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+
+.buy_button:active {
+  background-color: blue;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+input[type="text"]
+{
+	position: absolute;
+	right:10px;
+	width:75%;
+	background-color: white;
+	opacity: 1;
+}
+
+
+</style>
+</head>
+<body>
+
+<div id="main">
+<form method="post">
+
+
+	<h2>Step 1:Your Details</h2>
+				<div class="fields">
+					<div class="trans">
+							<br>Name:<input type="text" name="name" placeholder="First and last name here"><br><br>
+					</div>
+					<div class="trans">
+							<br>Email:<input type="text" name="email" placeholder="example@domain.com"><br><br>
+					</div>
+					<div class="trans">
+							<br>Phone:<input type="text" name="phone" placeholder="eg: +44750000000"><br><br>
+					</div>
+
+				</div>
+
+<br>
+				<div class="fields">
+				<h2>Step 2:Delivery Address</h2>
+					<div class="trans">
+						Address:<textarea rows="5" cols="50"></textarea>
+					</div>
+					<div class="trans">
+							Post Code:<input type="text" id="post" name="post" placeholder="eg: 110078">
+					</div>
+					<div class="trans">
+							Country:<input type="text" name="country" placeholder="eg: India">
+					</div>
+			</div>
+
+
+
+
+				<h2>Step 1:Card details </h2>
+				<div class="trans">
+					Card Type <br><br><br><br>
+						<div class="radioo">
+							<input type="radio" value ="agn" name="card"> <img src="visa.jpg" alt="visa_logo" class="radio_image"></img> Visa </input> &nbsp
+							<input type="radio" value ="agn" name="card"> <img src="amex.png" alt="amex_logo" class="radio_image"></img> AmEx</input> &nbsp
+							<input type="radio" value ="agn" name="card"> <img src="mastercard.png" alt="mc_logo" class="radio_image"> </img> Mastercard </input>
+						</div>
+
+					<br>
+				</div>
+				<div class="trans">
+					Card Number <input type="text" name="card_num" > </input>
+				<br> 
+				</div>
+
+				<div class="trans">
+					Security Code <input type="text" name="security_code"> </input>
+				<br>
+				</div>
+
+				<div class="trans">
+					Name on card <input type="text" name="card_name" > </input>
+				<br>
+				</div>
+		
+			
+			<br><br><button class="buy_button" type="button" value="BUY IT" name="buy"> BUY IT ! </button>
+			
+
+
+</form>
+	
+
+</div>
+
+</body>
+</html>
